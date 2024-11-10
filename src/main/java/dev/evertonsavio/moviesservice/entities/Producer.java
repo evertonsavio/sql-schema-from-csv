@@ -22,17 +22,6 @@ public class Producer {
     public Producer() {
     }
 
-    public Producer(String producers, Integer min_interval, Integer max_interval, Integer min_previous_year,
-                    Integer max_previous_year, Integer min_following_year, Integer max_following_year) {
-        this.producers = producers;
-        this.min_interval = min_interval;
-        this.max_interval = max_interval;
-        this.min_previous_year = min_previous_year;
-        this.max_previous_year = max_previous_year;
-        this.min_following_year = min_following_year;
-        this.max_following_year = max_following_year;
-    }
-
     public Long getId()
     {
         return id;

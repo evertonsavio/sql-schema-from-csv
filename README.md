@@ -17,7 +17,7 @@
    cd sql-schema-from-csv
    ```
 
-2. **Install GraalVM:**
+2. **( OPTIONAL ) Install GraalVM:**
 
    Follow the instructions on the [GraalVM website](https://www.graalvm.org/docs/getting-started/) to install GraalVM.
 
@@ -63,22 +63,26 @@
   ```json
   {
     "min": [
-      {
-        "producer": "Allan Carr",
-        "interval": 4,
-        "previousWin": 1980,
-        "followingWin": 1984
-      },
-      ...
+        {
+            "producer": "Mike Lobell",
+            "interval": 1,
+            "previousWin": 1980,
+            "followingWin": 1981
+        },
+        {
+            "producer": "Stanley Donen",
+            "interval": 1,
+            "previousWin": 1980,
+            "followingWin": 1981
+        }
     ],
     "max": [
-      {
-        "producer": "Allan Carr",
-        "interval": 12,
-        "previousWin": 1984,
-        "followingWin": 1996
-      },
-      ...
+        {
+            "producer": "Allan Carr",
+            "interval": 12,
+            "previousWin": 1984,
+            "followingWin": 1996
+        }
     ]
   }
   ```
