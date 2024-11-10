@@ -10,6 +10,6 @@ import java.util.List;
 @Repository
 public interface ProducerRepository extends CrudRepository<Producer, Long> {
 
-    @Query(value = "SELECT * FROM PRODUCER where MIN_INTERVAL is not null", nativeQuery = true)
+    @Query(value = "SELECT * FROM PRODUCER where MIN_INTERVAL is not NULL", nativeQuery = true)
     List<Producer> findAllProducersWithAwardsInterval();
 }

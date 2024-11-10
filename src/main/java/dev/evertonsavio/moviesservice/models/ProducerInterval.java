@@ -1,7 +1,6 @@
 package dev.evertonsavio.moviesservice.models;
 
-public class ProducerInterval
-{
+public class ProducerInterval {
 
     private String producer;
     private Integer interval;
