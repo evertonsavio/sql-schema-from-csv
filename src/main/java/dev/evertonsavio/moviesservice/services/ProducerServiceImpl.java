@@ -19,26 +19,26 @@ public class ProducerServiceImpl implements ProducerService {
     @Override
     public ProducerResponse getProducersAwardsInterval() {
 
-        List<Producer> allProducersWithMinInterval = producerRepository.findAllProducersWithMinInterval();
-        List<Producer> allProducersWithMaxInterval = producerRepository.findAllProducersWithMaxInterval();
+        List<Producer> allProducersWithMinInterval = producerRepository.findAllProducersMinAndMaxIntervals();
         List<ProducerInterval> min = new ArrayList<>();
         List<ProducerInterval> max = new ArrayList<>();
 
         allProducersWithMinInterval.forEach(producer -> {
             ProducerInterval minProducerInterval = new ProducerInterval();
-            minProducerInterval.setProducer(producer.getProducers());
-            minProducerInterval.setInterval(producer.getMin_interval());
-            minProducerInterval.setPreviousWin(producer.getMin_previous_year());
-            minProducerInterval.setFollowingWin(producer.getMin_following_year());
-            min.add(minProducerInterval);
-        });
-        allProducersWithMaxInterval.forEach(producer -> {
-            ProducerInterval maxProducerInterval = new ProducerInterval();
-            maxProducerInterval.setProducer(producer.getProducers());
-            maxProducerInterval.setInterval(producer.getMax_interval());
-            maxProducerInterval.setPreviousWin(producer.getMax_previous_year());
-            maxProducerInterval.setFollowingWin(producer.getMax_following_year());
-            max.add(maxProducerInterval);
+            if(producer.getX_type().equalsIgnoreCase("MIN")){
+                minProducerInterval.setProducer(producer.getProducers());
+                minProducerInterval.setInterval(producer.getX_interval());
+                minProducerInterval.setPreviousWin(producer.getPrev_years());
+                minProducerInterval.setFollowingWin(producer.getYears());
+                min.add(minProducerInterval);
+            } else {
+                ProducerInterval maxProducerInterval = new ProducerInterval();
+                maxProducerInterval.setProducer(producer.getProducers());
+                maxProducerInterval.setInterval(producer.getX_interval());
+                maxProducerInterval.setPreviousWin(producer.getPrev_years());
+                maxProducerInterval.setFollowingWin(producer.getYears());
+                max.add(maxProducerInterval);
+            }
         });
 
         return new ProducerResponse(min, max);

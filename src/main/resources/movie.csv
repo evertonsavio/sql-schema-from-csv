@@ -6,12 +6,12 @@ year;title;studios;producers;winner
 1980;The Nude Bomb;Universal Studios;Jennings Lang;
 1980;The Jazz Singer;Associated Film Distribution;Jerry Leider;
 1980;Raise the Titanic;Associated Film Distribution;William Frye;
-1980;Saturn 3;Associated Film Distribution;Stanley Donen;yes
-1980;Windows;United Artists;Mike Lobell;yes
+1980;Saturn 3;Associated Film Distribution;Stanley Donen;
+1980;Windows;United Artists;Mike Lobell;
 1980;Xanadu;Universal Studios;Lawrence Gordon;
 1981;Mommie Dearest;Paramount Pictures;Frank Yablans;yes
-1981;Endless Love;Universal Studios, PolyGram;Stanley Donen;yes
-1981;Heaven's Gate;United Artists;Mike Lobell;yes
+1981;Endless Love;Universal Studios, PolyGram;Dyson Lovell;
+1981;Heaven's Gate;United Artists;Joann Carelli;
 1981;The Legend of the Lone Ranger;Universal Studios, Associated Film Distribution;Walter Coblenz;
 1981;Tarzan, the Ape Man;MGM, United Artists;John Derek;
 1982;Inchon;MGM;Mitsuharu Ishii;yes
@@ -28,7 +28,7 @@ year;title;studios;producers;winner
 1984;Cannonball Run II;Warner Bros.;Albert S. Ruddy;
 1984;Rhinestone;20th Century Fox;Marvin Worth and Howard Smith;
 1984;Sheena;Columbia Pictures;Paul Aratow;
-1984;Where the Boys Are '84;TriStar Pictures;Allan Carr;yes
+1984;Where the Boys Are '84;TriStar Pictures;Allan Carr;
 1985;Rambo: First Blood Part II;Columbia Pictures;Buzz Feitshans;yes
 1985;Fever Pitch;MGM, United Artists;Freddie Fields;
 1985;Revolution;Warner Bros.;Irwin Winkler;
@@ -86,7 +86,7 @@ year;title;studios;producers;winner
 1995;Waterworld;Universal Studios;Kevin Costner, John Davis, Charles Gordon and Lawrence Gordon;
 1996;Striptease;Columbia Pictures, Castle Rock Entertainment;Andrew Bergman and Mike Lobell;yes
 1996;Barb Wire;PolyGram Filmed Entertainment, Gramercy Pictures;Todd Moyer, Mike Richardson and Brad Wyman;
-1996;Ed;Universal Studios;Allan Carr;yes
+1996;Ed;Universal Studios;Rosalie Swedlin;
 1996;The Island of Dr. Moreau;New Line Cinema;Edward R. Pressman;
 1996;The Stupids;New Line Cinema, Savoy Pictures;Leslie Belzberg;
 1997;The Postman;Warner Bros.;Kevin Costner, Steve Tisch and Jim Wilson;yes
@@ -111,7 +111,7 @@ year;title;studios;producers;winner
 2000;The Next Best Thing;Paramount Pictures;Leslie Dixon, Linne Radmin and Tom Rosenberg;
 2001;Freddy Got Fingered;20th Century Fox;Larry Brezner, Howard Lapides and Lauren Lloyd;yes
 2001;Driven;Warner Bros., Franchise Pictures;Renny Harlin, Elie Samaha and Sylvester Stallone;
-2001;Glitter;20th Century Fox, Columbia Pictures;Laurence Mark and E. Bennett Walsh;yes
+2001;Glitter;20th Century Fox, Columbia Pictures;Laurence Mark and E. Bennett Walsh;
 2001;Pearl Harbor;Touchstone Pictures;Michael Bay and Jerry Bruckheimer;
 2001;3000 Miles to Graceland;Warner Bros., Franchise Pictures;Demian Lichtenstein, Eric Manes, Elie Samaha, Richard Spero and Andrew Stevens;
 2002;Swept Away;Screen Gems;Matthew Vaughn;yes
@@ -153,7 +153,7 @@ year;title;studios;producers;winner
 2009;All About Steve;20th Century Fox;Sandra Bullock and Mary McLaglen;
 2009;G.I. Joe: The Rise of Cobra;Paramount Pictures, Hasbro;Lorenzo di Bonaventura, Bob Ducsay and Brian Goldner;
 2009;Land of the Lost;Universal Studios;Sid and Marty Krofft and Jimmy Miller;
-2009;Old Dogs;Walt Disney Pictures;Peter Abrams, Robert Levy and Andrew Panay;yes
+2009;Old Dogs;Walt Disney Pictures;Peter Abrams, Robert Levy and Andrew Panay;
 2010;The Last Airbender;Paramount Pictures, Nickelodeon Movies;Frank Marshall, Kathleen Kennedy, Sam Mercer and M. Night Shyamalan;yes
 2010;The Bounty Hunter;Columbia Pictures;Neal H. Moritz;
 2010;Sex and the City 2;New Line Cinema, HBO Films, Village Roadshow Pictures;Michael Patrick King, John Melfi, Sarah Jessica Parker and Darren Star;

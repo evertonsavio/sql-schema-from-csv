@@ -12,12 +12,10 @@ public class Producer {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
     private String producers;
-    private Integer min_interval;
-    private Integer max_interval;
-    private Integer min_previous_year;
-    private Integer max_previous_year;
-    private Integer min_following_year;
-    private Integer max_following_year;
+    private Integer x_interval;
+    private String x_type;
+    private Integer years;
+    private Integer prev_years;
 
     public Producer() {
     }
@@ -42,63 +40,43 @@ public class Producer {
         this.producers = producers;
     }
 
-    public Integer getMin_interval()
+    public Integer getX_interval()
     {
-        return min_interval;
+        return x_interval;
     }
 
-    public void setMin_interval(Integer min_interval)
+    public void setX_interval(Integer x_interval)
     {
-        this.min_interval = min_interval;
+        this.x_interval = x_interval;
     }
 
-    public Integer getMax_interval()
+    public String getX_type()
     {
-        return max_interval;
+        return x_type;
     }
 
-    public void setMax_interval(Integer max_interval)
+    public void setX_type(String x_type)
     {
-        this.max_interval = max_interval;
+        this.x_type = x_type;
     }
 
-    public Integer getMin_previous_year()
+    public Integer getYears()
     {
-        return min_previous_year;
+        return years;
     }
 
-    public void setMin_previous_year(Integer min_previous_year)
+    public void setYears(Integer years)
     {
-        this.min_previous_year = min_previous_year;
+        this.years = years;
     }
 
-    public Integer getMax_previous_year()
+    public Integer getPrev_years()
     {
-        return max_previous_year;
+        return prev_years;
     }
 
-    public void setMax_previous_year(Integer max_previous_year)
+    public void setPrev_years(Integer prev_years)
     {
-        this.max_previous_year = max_previous_year;
-    }
-
-    public Integer getMin_following_year()
-    {
-        return min_following_year;
-    }
-
-    public void setMin_following_year(Integer min_following_year)
-    {
-        this.min_following_year = min_following_year;
-    }
-
-    public Integer getMax_following_year()
-    {
-        return max_following_year;
-    }
-
-    public void setMax_following_year(Integer max_following_year)
-    {
-        this.max_following_year = max_following_year;
+        this.prev_years = prev_years;
     }
 }
