@@ -64,24 +64,18 @@
   {
     "min": [
         {
-            "producer": "Mike Lobell",
+            "producer": "Joel Silver",
             "interval": 1,
-            "previousWin": 1980,
-            "followingWin": 1981
-        },
-        {
-            "producer": "Stanley Donen",
-            "interval": 1,
-            "previousWin": 1980,
-            "followingWin": 1981
+            "previousWin": 1990,
+            "followingWin": 1991
         }
     ],
     "max": [
         {
-            "producer": "Allan Carr",
-            "interval": 12,
-            "previousWin": 1984,
-            "followingWin": 1996
+            "producer": "Matthew Vaughn",
+            "interval": 13,
+            "previousWin": 2002,
+            "followingWin": 2015
         }
     ]
   }
