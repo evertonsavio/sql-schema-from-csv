@@ -43,19 +43,16 @@ class ProducersControllerTest
 				.andDo(print())
 				.andExpect(status().isOk())
 				.andExpect(content().contentType(APPLICATION_JSON))
-				.andExpect(jsonPath("$.min", hasSize(2)))
+				.andExpect(jsonPath("$.min", hasSize(1)))
 				.andExpect(jsonPath("$.max", hasSize(1)))
-				.andExpect(jsonPath("$.min[0].producer").value("Mike Lobell"))
+				.andExpect(jsonPath("$.min[0].producer").value("Wyck Godfrey, Stephenie Meyer and Karen Rosenfelt"))
 				.andExpect(jsonPath("$.min[0].interval").value(1))
-				.andExpect(jsonPath("$.min[0].previousWin").value(1980))
-				.andExpect(jsonPath("$.min[0].followingWin").value(1981))
-				.andExpect(jsonPath("$.min[1].producer").value("Stanley Donen"))
-				.andExpect(jsonPath("$.min[1].interval").value(1))
-				.andExpect(jsonPath("$.min[1].previousWin").value(1980))
-				.andExpect(jsonPath("$.min[1].followingWin").value(1981))
-				.andExpect(jsonPath("$.max[0].producer").value("Allan Carr"))
-				.andExpect(jsonPath("$.max[0].interval").value(12))
+				.andExpect(jsonPath("$.min[0].previousWin").value(2011))
+				.andExpect(jsonPath("$.min[0].followingWin").value(2012))
+				.andExpect(jsonPath("$.max[0].producer").value("Bo Derek"))
+				.andExpect(jsonPath("$.max[0].interval").value(6))
 				.andExpect(jsonPath("$.max[0].previousWin").value(1984))
-				.andExpect(jsonPath("$.max[0].followingWin").value(1996));
+				.andExpect(jsonPath("$.max[0].followingWin").value(1990));
+
 	}
 }
