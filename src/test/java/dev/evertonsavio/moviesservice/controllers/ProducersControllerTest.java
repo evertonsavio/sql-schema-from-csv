@@ -44,11 +44,14 @@ class ProducersControllerTest
 				.andExpect(status().isOk())
 				.andExpect(content().contentType(APPLICATION_JSON))
 				.andExpect(jsonPath("$.min", hasSize(1)))
-				.andExpect(jsonPath("$.max", hasSize(0)))
-				.andExpect(jsonPath("$.min[0].producer").value("Bo Derek"))
-				.andExpect(jsonPath("$.min[0].interval").value(6))
-				.andExpect(jsonPath("$.min[0].previousWin").value(1984))
-				.andExpect(jsonPath("$.min[0].followingWin").value(1990));
-
+				.andExpect(jsonPath("$.max", hasSize(1)))
+				.andExpect(jsonPath("$.min[0].producer").value("Joel Silver"))
+				.andExpect(jsonPath("$.min[0].interval").value(1))
+				.andExpect(jsonPath("$.min[0].previousWin").value(1990))
+				.andExpect(jsonPath("$.min[0].followingWin").value(1991))
+				.andExpect(jsonPath("$.max[0].producer").value("Matthew Vaughn"))
+				.andExpect(jsonPath("$.max[0].interval").value(13))
+				.andExpect(jsonPath("$.max[0].previousWin").value(2002))
+				.andExpect(jsonPath("$.max[0].followingWin").value(2015));
 	}
 }
